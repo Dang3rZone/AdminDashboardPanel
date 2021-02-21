@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   @Input() percentage: string;
 
   Highcharts = Highcharts;
+  @Input() data = [];
   chartOptions: {};
 
   constructor() {}
@@ -69,7 +70,7 @@ export class CardComponent implements OnInit {
       },
       series: [
         {
-          data: [71, 78, 39, 66],
+          data: this.data,
         },
       ],
     };

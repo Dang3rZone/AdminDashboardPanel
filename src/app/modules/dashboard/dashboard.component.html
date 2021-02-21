@@ -1,5 +1,5 @@
 <div>
-  <app-widget-area></app-widget-area>
+  <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
 
 <br />
@@ -17,6 +17,7 @@
       label="New Users"
       total="18k"
       percentage="50"
+      [data]="cards"
     ></app-widget-card>
   </mat-card>
 
@@ -25,6 +26,7 @@
       label="Users retention"
       total="12k"
       percentage="40"
+      [data]="cards"
     ></app-widget-card>
   </mat-card>
 
@@ -33,6 +35,7 @@
       label="Users engagement"
       total="8k"
       percentage="30"
+      [data]="cards"
     ></app-widget-card>
   </mat-card>
 
@@ -41,6 +44,7 @@
       label="Referral"
       total="6k"
       percentage="20"
+      [data]="cards"
     ></app-widget-card>
   </mat-card>
 </div>
@@ -51,7 +55,7 @@
 
 <br />
 
-<div>
-  <div>Table</div>
-  <div>Pie Chart</div>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+  <div fxFlex="60">Table</div>
+  <div fxFlex="40"><app-widget-pie></app-widget-pie>></div>
 </div>
