@@ -35,6 +35,12 @@ import { CardComponent } from './widgets/card/card.component';
     RouterModule,
     HighchartsChartModule,
   ],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent, AreaComponent],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    AreaComponent,
+    CardComponent,
+  ],
 })
 export class SharedModule {}
