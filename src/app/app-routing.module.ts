@@ -7,7 +7,7 @@ import { PostsComponent } from './modules/posts/posts.component';
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
+    // pathMatch: 'full',
     component: DefaultComponent,
     children: [
       {
